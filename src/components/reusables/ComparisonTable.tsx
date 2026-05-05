@@ -311,7 +311,7 @@ export default function ComparisonTable() {
                       "flex-1 rounded-sm px-4 py-2 text-sm font-semibold transition-all duration-200",
                       billing === option
                         ? "bg-[#FFD700] text-[#2D1551] shadow-sm"
-                        : "bg-transparent text-slate-600 hover:bg-black/5",
+                        : "bg-transparent text-slate-600 hover:bg-black/3",
                     )}
                   >
                     {option === "annual" ? "Annual" : "Tri-Annual"}
@@ -357,7 +357,7 @@ export default function ComparisonTable() {
                 {PLANS.map((plan) => (
                   <div
                     key={plan.id}
-                    className="flex flex-col px-4 py-6 text-[#1F2937]"
+                    className="flex flex-col px-4 py-6 text-[#1F2937] hover:bg-[#FFF7CD]/20 rounded-lg"
                     style={
                       isSlider
                         ? { width: `${100 / PLANS.length}%`, flexShrink: 0 }

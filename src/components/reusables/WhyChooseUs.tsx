@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-// 1. Define your data constant for easy maintenance
 const REASONS = [
   {
     title: "99.9% Uptime Guarantee",
@@ -55,9 +54,16 @@ const REASONS = [
   },
 ];
 
-const WhyChooseUs = () => {
+interface WhyChooseUsProps {
+  variant?: "primary" | "secondary";
+}
+
+const WhyChooseUs = ({ variant = "secondary" }: WhyChooseUsProps) => {
+  const bgClass =
+    variant === "primary" ? "pattern-primary-bg" : "pattern-secondary-bg";
+
   return (
-    <section className="pattern-secondary-bg py-12 xl:py-16">
+    <section className={`${bgClass} py-12 xl:py-16`}>
       <div className="container">
         {/* Header Section */}
         <div className="text-center max-w-3xl mx-auto mb-12 xl:mb-16">
@@ -75,14 +81,12 @@ const WhyChooseUs = () => {
               key={index}
               className="bg-white p-8 lg:p-12 rounded-lg shadow-sm flex flex-col items-start relative group hover:shadow-md transition-shadow duration-300"
             >
-              {/* Badge for specific items */}
               {item.badge && (
                 <span className="absolute top-4 right-4 bg-zinc-800 text-white text-[10px] px-2 py-1 rounded-full uppercase font-bold">
                   {item.badge}
                 </span>
               )}
 
-              {/* Icon Container */}
               <div className="mb-6 relative w-12 h-12">
                 <Image
                   src={item.icon}
@@ -92,7 +96,6 @@ const WhyChooseUs = () => {
                 />
               </div>
 
-              {/* Content */}
               <h3 className="font-medium text-[20px] leading-tight mb-3">
                 {item.title}
               </h3>

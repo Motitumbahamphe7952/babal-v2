@@ -54,7 +54,7 @@ const CPanel = ({
     <section className="my-12 pattern-secondary-bg">
       <div className="container py-10 text-foreground my-10">
         <div className="mx-auto">
-          <h2 className="text-4xl font-bold mb-10 text-center">{title}</h2>
+          <h2 className="font-bold mb-10 text-center">{title}</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {Object.keys(features).map((columnKey) => (
