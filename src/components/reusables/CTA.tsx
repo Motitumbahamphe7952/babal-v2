@@ -44,7 +44,7 @@ const CTA = () => {
           <p className="font-figtree font-normal text-[18px] xl:text-[20px] leading-[28px] text-white/80 mb-8">
             {description}
           </p>
-          <button className="group bg-[#fdd700] text-[#212121] px-6 py-3 rounded-md font-bold flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 cursor-pointer">
+          <button className="group bg-primary text-foreground px-6 py-3 rounded-md font-bold flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 cursor-pointer">
             {button.label}
             <MoveRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </button>

@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 1063.1 259" style="enable-background:new 0 0 1063.1 259;" xml:space="preserve" class="svg mt-50" src="patterns/balancing.svg" alt="Load Balancing">
 <style type="text/css">
 	.bal0{fill:none;stroke:#808080;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.bal1{fill:#FFFFFF;stroke:#ee5586;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.bal1{fill:#FFFFFF;stroke:#84A860;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.bal2{fill:none;stroke:#808080;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.bal3{fill:none;stroke:#808080;stroke-miterlimit:10;}
-	.bal4{fill:none;stroke:#ee5586;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.bal5{fill:#ee5586;}
+	.bal4{fill:none;stroke:#84A860;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.bal5{fill:#84A860;}
 </style>
 <rect x="112.6" y="41.6" class="bal0" width="55.7" height="37.1"></rect>
 <line class="bal0" x1="107.9" y1="87.4" x2="172.9" y2="87.4"></line>
