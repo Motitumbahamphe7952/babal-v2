@@ -4,6 +4,7 @@ import CPanel from "@/components/reusables/Cpanel"
 import CTA from "@/components/reusables/CTA"
 import HostingSolutions from "@/components/reusables/HostingSolution"
 import WhyChooseUs from "@/components/reusables/WhyChooseUs"
+import Experts from "./(general)/contact/components/Experts"
 
 const Page = () => {
   return (
@@ -14,6 +15,7 @@ const Page = () => {
       <LoadBalancing />
       <CPanel />
       <ComparisonTable />
+      <Experts />
     </div>
   )
 }

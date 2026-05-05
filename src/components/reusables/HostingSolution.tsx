@@ -67,7 +67,8 @@ const HostingSolutions = () => {
           {HOSTING_SERVICES.map((service, index) => (
             <div
               key={index}
-              className="group bg-white p-8 lg:p-12 rounded-lg border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-500 flex flex-col relative"
+              /* Added h-full to keep all cards in the row the same height */
+              className="group bg-white p-8 lg:p-12 rounded-lg border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-500 flex flex-col relative h-full"
             >
               {/* Optional "Popular" Badge */}
               {service.badge && (
@@ -76,8 +77,8 @@ const HostingSolutions = () => {
                 </span>
               )}
 
-              {/* Icon */}
-              <div className="mb-6 relative w-14 h-14">
+              {/* Icon - flex-shrink-0 prevents the icon from squishing if text is very long */}
+              <div className="mb-6 relative w-14 h-14 flex-shrink-0">
                 <Image
                   src={service.icon}
                   alt={service.title}
@@ -86,26 +87,28 @@ const HostingSolutions = () => {
                 />
               </div>
 
-              {/* Text Content */}
-              <h3 className="font-medium text-[20px] leading-tight py-2">
-                {service.title}
-              </h3>
-              <p className="font-normal text-[16px] leading-[28px] text-foreground/70 antialiased">
-                {service.subtitle}
-              </p>
+              {/* Content Wrapper: This section grows to fill space, pushing the button down */}
+              <div className="flex-grow flex flex-col">
+                <h3 className="font-medium text-[20px] leading-tight py-2">
+                  {service.title}
+                </h3>
+                <p className="font-normal text-[16px] leading-[28px] text-foreground/70 antialiased">
+                  {service.subtitle}
+                </p>
 
-              {/* Price Section */}
-              <div className="flex items-baseline gap-1 mb-4">
-                <span className="text-[18px] font-regular">रु</span>
-                <span className="text-[28px] font-regular">
-                  {service.price}
-                </span>
-                <span className="text-[14px] text-foreground font-regular">
-                  {service.period}
-                </span>
+                {/* Price Section stays with the text but above the button */}
+                <div className="flex items-baseline gap-1 mb-6">
+                  <span className="text-[18px] font-regular">रु</span>
+                  <span className="text-[28px] font-regular">
+                    {service.price}
+                  </span>
+                  <span className="text-[14px] text-foreground font-regular">
+                    {service.period}
+                  </span>
+                </div>
               </div>
 
-              {/* CTA Button */}
+              {/* CTA Button: mt-auto ensures it sits at the bottom of the card */}
               <button className="mt-auto w-fit bg-primary font-bold py-2 px-4 rounded-md flex items-center gap-2 transition-colors cursor-pointer group/btn">
                 All plans
                 <MoveRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />

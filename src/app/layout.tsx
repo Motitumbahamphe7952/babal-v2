@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: "Babal Host - Reliable and Affordable Web Hosting Solutions",
   description:
     "Babal Host is a leading web hosting provider offering reliable and affordable hosting solutions for individuals and businesses. With a commitment to exceptional customer service and cutting-edge technology, Babal Host ensures your website is always up and running smoothly. Whether you're looking for shared hosting, VPS, or dedicated servers, Babal Host has the perfect hosting plan to meet your needs. Experience top-notch performance, security, and support with Babal Host today.",
+  icons: {
+    icon: "/favicon.webp", 
+  },
 };
 
 export default function RootLayout({
