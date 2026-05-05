@@ -1,6 +1,5 @@
-import React from "react";
-import Image from "next/image";
 import { MoveRight } from "lucide-react";
+import Image from "next/image";
 
 const DARK_SECTION_DATA = {
   title: "Why choose Babal Host?",

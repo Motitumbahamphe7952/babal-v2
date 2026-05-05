@@ -1,4 +1,5 @@
 import LoadBalancing from "@/components/home/LoadBalancing"
+import ComparisonTable from "@/components/reusables/ComparisonTable"
 import CPanel from "@/components/reusables/Cpanel"
 import CTA from "@/components/reusables/CTA"
 import HostingSolutions from "@/components/reusables/HostingSolution"
@@ -12,6 +13,7 @@ const Page = () => {
       <HostingSolutions />
       <LoadBalancing />
       <CPanel />
+      <ComparisonTable />
     </div>
   )
 }
