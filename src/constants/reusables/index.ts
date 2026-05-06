@@ -28,10 +28,10 @@ export const footerContent: IFooterContent = {
     inquiryEmail: "info@babal.host",
   },
   paymentLogos: [
-    { src: "/images/footer/esewa.png", alt: "eSewa", width: 100, height: 40 },
-    { src: "/images/footer/Khalti.jpg", alt: "Khalti", width: 100, height: 40 },
-    { src: "/images/footer/paypal.jpg", alt: "PayPal", width: 100, height: 40 },
-    { src: "/images/footer/stripe.png", alt: "Stripe", width: 100, height: 40 },
+    { src: "/images/footer/esewa.png", alt: "eSewa", width: 400, height: 100 },
+    { src: "/images/footer/Khalti.jpg", alt: "Khalti", width: 400, height: 100 },
+    { src: "/images/footer/paypal.jpg", alt: "PayPal", width: 400, height: 100 },
+    { src: "/images/footer/stripe.png", alt: "Stripe", width: 400, height: 100 },
     {
       src: "/images/footer/bank transfer.jpg",
       alt: "Bank Transfer",

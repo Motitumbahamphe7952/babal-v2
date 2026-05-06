@@ -5,6 +5,9 @@ import CTA from "@/components/reusables/CTA"
 import HostingSolutions from "@/components/reusables/HostingSolution"
 import WhyChooseUs from "@/components/reusables/WhyChooseUs"
 import Experts from "./(general)/contact/components/Experts"
+import Review from "@/components/reusables/Review"
+import FAQ from "@/components/reusables/FAQ"
+import Banner from "@/components/reusables/Banner"
 
 const Page = () => {
   return (
@@ -16,6 +19,9 @@ const Page = () => {
       <CPanel />
       <ComparisonTable />
       <Experts />
+      <Banner />
+      <Review />
+      <FAQ />
     </div>
   )
 }

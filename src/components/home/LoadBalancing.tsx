@@ -16,7 +16,7 @@ const LoadBalancing = () => {
   const { title, description, imageSrc, steps } = LOAD_BALANCING_DATA;
 
   return (
-    <section className="bg-white py-10 lg:py-24 overflow-hidden">
+    <section className="bg-white py-12 lg:py-16 overflow-hidden">
       <div className="container flex flex-col">
         {/* Header Section */}
         <div className="max-w-[800px]">
